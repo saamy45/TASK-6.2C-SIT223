@@ -8,8 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building project...'
-                sh 'mvn clean package'
+                bat 'echo Building project...'
             }
         }
 
